@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header/Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('cabana_landscapeimg.jpg') center/cover no-repeat;
+    z-index: -1;
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 85px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.hero-content .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero-content .tagline {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Ghost Buttons */
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #333;
+}
+
+/* Gallery Scroll Section */
+.gallery-scroll {
+    background: #1a1a1a;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar */
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-container img {
+    min-width: 80%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Gallery Navigation Dots */
+.gallery-dots {
+    text-align: center;
+    padding: 20px 0;
+    background: #1a1a1a;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.dot.active, .dot:hover {
+    background-color: #d4af37;
+    transform: scale(1.2);
+}
+
+/* Intro Section */
+.resort-intro {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 100px 10%;
+}
+
+.intro-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 0px rgba(212, 175, 55, 0.3);
+}
+
+.intro-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.gold-line {
+    width: 60px;
+    border: 2px solid #d4af37;
+    background: #d4af37;
+    margin: 20px 0;
+    border-radius: 1px;
+}
+
+.intro-text p {
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 40px;
+    background: #f8f9fa;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    color: #667eea;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 60px 40px;
+}
+
+.rooms h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.room-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+}
+
+.room-info {
+    flex: 1;
+}
+
+.room-info h3 {
+    margin: 0 0 15px 0;
+    color: #667eea;
+    font-size: 24px;
+}
+
+.room-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.room-details {
+    color: #666;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .room-card {
+        flex-direction: column;
+    }
+
+    .gallery-container img {
+        min-width: 90%;
+        height: 300px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+
+/* Landscape & Desktop Adjustments */
+@media screen and (min-width: 1024px) {
+    
+    /* Fix gallery for wide screens */
+    .gallery-container img {
+        min-width: 45%;
+        height: 550px;
+    }
+
+    /* Ensure intro section is clean 50/50 split */
+    .resort-intro {
+        padding: 100px 15%;
+    }
+
+    .intro-grid {
+        gap: 100px;
+    }
+
+    .intro-image, .intro-text {
+        flex: 1;
+    }
+
+    .intro-text h2 {
+        font-size: 4.5rem;
+    }
+
+    /* Larger heading on desktop */
+    .hero-content h2 {
+        font-size: 95px;
+    }
+
+    /* Better spacing for services */
+    .services {
+        padding: 80px 60px;
+    }
+
+    .services-grid {
+        gap: 40px;
+    }
+
+    /* More spacious rooms section */
+    .rooms {
+        padding: 80px 60px;
+    }
+
+    .room-card {
+        gap: 50px;
+        padding: 40px;
+    }
+}
+
+/* Tablet Adjustments */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .gallery-container img {
+        min-width: 60%;
+        height: 400px;
+    }
+
+    .intro-grid {
+        gap: 50px;
+        padding: 60px 30px;
+    }
+
+    .intro-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 65px;
+    }
+
+    .services {
+        padding: 60px 30px;
+    }
+
+    .rooms {
+        padding: 60px 30px;
+    }
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 767px) {
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 12px;
+    }
+
+    .hero-content .tagline {
+        font-size: 16px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-outline {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+
+    .gallery-container {
+        padding: 0 20px;
+    }
+
+    .gallery-container img {
+        min-width: 85%;
+        height: 250px;
+    }
+
+    .gallery-title {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 28px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card .icon {
+        font-size: 36px;
+    }
+
+    .rooms {
+        padding: 40px 20px;
+    }
+
+    .rooms h2 {
+        font-size: 28px;
+    }
+
+    .room-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .room-image {
+        font-size: 60px;
+        min-width: 100%;
+    }
+
+    .room-info h3 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .room-details {
+        font-size: 14px;
+    }
+}
+
+/* Ultra-wide screens (4K monitors) */
+@media screen and (min-width: 1920px) {
+    
+    .hero-content h2 {
+        font-size: 120px;
+    }
+
+    .intro-text h2 {
+        font-size: 5.5rem;
+    }
+
+    .gallery-container img {
+        min-width: 35%;
+        height: 650px;
+    }
+
+    .services {
+        padding: 100px 100px;
+    }
+
+    .rooms {
+        padding: 100px 100px;
+    }
+}
+
+/* Landscape orientation on mobile devices */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 11px;
+    }
+
+    .hero-btns {
+        gap: 10px;
+    }
+
+    .btn-outline {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+}
