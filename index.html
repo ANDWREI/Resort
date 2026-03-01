@@ -1,0 +1,324 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aurora Cabanas - Book Your Stay</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Aurora Cabanas</h1>
+            <nav>
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#rooms">Rooms</a>
+                <a href="https://web.facebook.com/share/1CAgU5DFpR/?mibextid=wwXIfr" target="_blank">Book Now</a>
+            </nav>
+        </header>
+
+        <section class="hero" id="hero-section">
+            <div class="hero-bg" id="hero-bg"></div>
+            
+            <div class="hero-content">
+                <p class="subtitle">Welcome to</p>
+                <h2>Paradise</h2>
+                <p class="tagline">Experience luxury like never before</p>
+                
+                <div class="hero-btns">
+                    <a href="https://web.facebook.com/share/1CAgU5DFpR/?mibextid=wwXIfr" class="btn-outline" target="_blank">Book Now</a>
+                    <a href="#rooms" class="btn-outline">Explore Rooms</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-scroll" id="gallery">
+            <h2 class="gallery-title">Photo Gallery</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-container" id="auto-gallery">
+                    <img src="cabana_img1.jpg" alt="Resort View 1">
+                    <img src="cabana_img2.jpg" alt="Resort View 2">
+                    <img src="cabana_img3.jpg" alt="Resort View 3">
+                    <img src="cabana_img4.jpg" alt="Resort View 4">
+                    <img src="cabana_img5.jpg" alt="Resort View 5">
+                </div>
+            </div>
+            <div class="gallery-dots" id="gallery-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+        <section class="resort-intro">
+            <div class="intro-grid">
+                <div class="intro-image">
+                    <img src="cabana_img6.jpg" alt="Luxury Living">
+                </div>
+                <div class="intro-text">
+                    <h2>Welcome to Aurora Cabanas</h2>
+                    <hr class="gold-line">
+                    <p>Experience the perfect blend of rustic charm and modern comfort. Our mission is to provide a peaceful escape where you can relax, recharge, and immerse yourself in the beauty of nature. Since our establishment, Aurora Cabanas has been dedicated to offering warm, inviting interiors with breathtaking surroundings for unforgettable memories.</p>
+                    <p>Each cabin is thoughtfully designed to provide the ultimate luxury experience with premium amenities and stunning natural views.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+    <p class="section-subtitle">Experience Five-Star Luxury</p>
+    <h2 class="section-title">World-Class Comfort</h2>
+    <p class="section-description">Aurora Cabanas is Taytay's premier escape, offering rustic charm enriched by the warmth of Filipino hospitality.</p>
+    
+    <div class="services-grid-luxury">
+        <div class="luxury-card">
+            <div class="luxury-img">
+                <img src="cabana_img6.jpg" alt="Rooms & Suites">
+            </div>
+            <h3>Your Escape Awaits</h3>
+            <p>Unwind in elegantly appointed cabins where serene spaces and refined comfort invite you to slow down.</p>
+            <a href="#rooms" class="luxury-link">Explore Rooms <span class="arrow">→</span></a>
+        </div>
+
+        <div class="luxury-card">
+            <div class="luxury-img">
+                <img src="dining_cabana.jpg" alt="Dining">
+            </div>
+            <h3>Discover Exclusive Offers</h3>
+            <p>Savor local flavors with our curated dining options, ranging from casual poolside snacks to fine local cuisine.</p>
+            <a href="https://web.facebook.com/share/1CAgU5DFpR/" class="luxury-link">Reserve Now <span class="arrow">→</span></a>
+        </div>
+
+        <div class="luxury-card">
+            <div class="luxury-img">
+                <img src="recreation.jpg" alt="Recreation">
+            </div>
+            <h3>Indulge in Recreation</h3>
+            <p>Enter a destination defined by relaxation, exhilarating swims, and personalized service at every turn.</p>
+            <a href="#gallery" class="luxury-link">Learn More <span class="arrow">→</span></a>
+        </div>
+    </div>
+</section>
+
+        <section class="rooms" id="rooms">
+    <h2 class="section-title">Our Most Popular Rooms</h2>
+    <div class="rooms-grid">
+        <div class="room-card-v2">
+            <div class="room-img-container">
+                <img src="room 3.jpg" alt="Standard Room">
+                <div class="price-tag">₱3,500</div>
+            </div>
+            <div class="room-content-v2">
+                <h3>Standard Room</h3>
+                <div class="stars">★★★★★</div>
+                <div class="room-footer">
+                    <span class="duration">🕒 12 hours</span>
+                    <a href="#" class="btn-learn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card-v2">
+            <div class="room-img-container">
+                <img src="room 2.jpg" alt="Friends and Family">
+                <div class="price-tag">₱12,500</div>
+            </div>
+            <div class="room-content-v2">
+                <h3>Friends and Family</h3>
+                <div class="stars">★★★★★</div>
+                <div class="room-footer">
+                    <span class="duration">🕒 12 hours</span>
+                    <a href="#" class="btn-learn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-card-v2">
+            <div class="room-img-container">
+                <img src="room 1.jpg" alt="Master's Bedroom">
+                <div class="price-tag">₱15,500</div>
+            </div>
+            <div class="room-content-v2">
+                <h3>Master's Bedroom</h3>
+                <div class="stars">★★★★★</div>
+                <div class="room-footer">
+                    <span class="duration">🕒 12 hours</span>
+                    <a href="#" class="btn-learn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="https://web.facebook.com/share/1CAgU5DFpR/?mibextid=wwXIfr" target="_blank">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Developer Info</h3>
+                    <p><strong>Name:</strong> John Andrei Dayahan</p>
+                    <p><strong>Course & Section:</strong> BSIT BM14</p>
+                    <p><strong>School Year:</strong> 2025 - 2026</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><strong>Email:</strong> auroracabanas19@gmail.com</p>
+                    <p><strong>Phone:</strong> (+63) 0977 297 4336</p>
+                    <p><strong>Location:</strong> Philec Road, Naval Compound, Taytay, Philippines, 1920</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurora Cabanas. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            // Parallax hero effect
+            window.addEventListener('scroll', function() {
+                const scrollValue = window.scrollY;
+                const bg = document.getElementById('hero-bg');
+                bg.style.transform = 'scale(' + (1 + scrollValue * 0.0005) + ')';
+            });
+
+            // Gallery functionality
+            const gallery = document.getElementById('auto-gallery');
+            const dots = document.querySelectorAll('.dot');
+            let isUserInteracting = false;
+            let autoScrollTimeout;
+
+            // Function to navigate to specific slide when dot is clicked
+            function currentSlide(index) {
+                isUserInteracting = true;
+                
+                // Calculate scroll position based on image width (80%) + gap (20px)
+                const imageWidth = gallery.clientWidth * 0.8;
+                const gap = 20;
+                const scrollAmount = (imageWidth + gap) * index;
+                
+                gallery.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                updateDots(index);
+                clearTimeout(autoScrollTimeout);
+                
+                // Resume auto-scroll after user interaction
+                setTimeout(() => {
+                    isUserInteracting = false;
+                    scheduleAutoScroll();
+                }, 5000);
+            }
+
+            // Function to update which dot is active
+            function updateDots(activeIndex) {
+                dots.forEach((dot, i) => {
+                    if (i === activeIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            // Sync dots when user manually scrolls
+            gallery.addEventListener('scroll', () => {
+                const imageWidth = gallery.clientWidth * 0.8;
+                const gap = 20;
+                const scrollAmount = imageWidth + gap;
+                const currentIndex = Math.round(gallery.scrollLeft / scrollAmount);
+                updateDots(currentIndex);
+            });
+
+            // Detect user interaction
+            gallery.addEventListener('touchstart', () => {
+                isUserInteracting = true;
+                clearTimeout(autoScrollTimeout);
+            });
+
+            gallery.addEventListener('mousedown', () => {
+                isUserInteracting = true;
+                clearTimeout(autoScrollTimeout);
+            });
+
+            gallery.addEventListener('touchend', () => {
+                isUserInteracting = false;
+                scheduleAutoScroll();
+            });
+
+            gallery.addEventListener('mouseup', () => {
+                isUserInteracting = false;
+                scheduleAutoScroll();
+            });
+
+            // Auto-scroll function
+            function autoScroll() {
+                if (isUserInteracting) return;
+
+                const imageWidth = gallery.clientWidth * 0.8;
+                const gap = 20;
+                const scrollAmount = imageWidth + gap;
+                const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+                
+                // Loop back to start when reaching the end
+                if (gallery.scrollLeft >= maxScroll - 10) {
+                    gallery.scrollTo({ left: 0, behavior: 'smooth' });
+                    updateDots(0);
+                } else {
+                    gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
+                
+                scheduleAutoScroll();
+            }
+
+            function scheduleAutoScroll() {
+                autoScrollTimeout = setTimeout(autoScroll, 4000);
+            }
+
+            // Start auto-scroll on page load
+            scheduleAutoScroll();
+
+            // Back-to-Top button logic (wait until DOM is ready)
+            document.addEventListener('DOMContentLoaded', function() {
+                const backToTopBtn = document.getElementById('backToTop');
+                if (!backToTopBtn) return;
+
+                // Show button after scrolling down 400px
+                function toggleBackToTop() {
+                    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                        backToTopBtn.style.display = 'block';
+                    } else {
+                        backToTopBtn.style.display = 'none';
+                    }
+                }
+
+                window.addEventListener('scroll', toggleBackToTop);
+
+                // Smooth scroll to top on click
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+                // Initialize visibility
+                toggleBackToTop();
+            });
+        </script>
+
+        <button id="backToTop" title="Go to top">
+            <img src="arrow-removebg-preview.png" alt="Top">
+        </button>
+    </body>
+    </html>
