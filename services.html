@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Aurora Cabanas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white pt-5">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transition-nav py-3">
+        <div class="container border-bottom border-secondary pb-2">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 5px;">Aurora Cabanas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active text-gold" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Inquiry</a></li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="btn btn-outline-gold rounded-0 px-4 fw-bold" href="contact.html">BOOK NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 pt-5">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-4 fw-black text-uppercase mb-4">Resort <span class="text-gold">Experience</span></h2>
+                <div class="p-2 border border-secondary shadow-lg bg-dark position-relative">
+                    <img src="cabana_landscapeimg.jpg" usemap="#resortmap" class="img-fluid rounded border border-secondary" alt="Resort Map">
+                    <map name="resortmap">
+                        <area shape="rect" coords="34,44,270,350" alt="Dining" href="#menuCarouselSection">
+                        <area shape="circle" coords="500,200,80" alt="Pool" href="#menuCarousel">
+                    </map>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-6">
+                <div class="p-5 border-start border-gold bg-dark-glass h-100 shadow">
+                    <h3 class="text-gold text-uppercase fw-bold">Daytime <span class="text-white">Bistro</span></h3>
+                    <ul class="list-unstyled text-white-50 small mt-3">
+                        <li class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
+                            <span>Classic Longganisa Breakfast</span>
+                            <span class="text-gold">₱350</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
+                            <span>Aurora Tropical Fruit Bowl</span>
+                            <span class="text-gold">₱280</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span>Fresh Local Mango Shake</span>
+                            <span class="text-gold">₱150</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-5 border-start border-gold bg-dark-glass h-100 shadow">
+                    <h3 class="text-gold text-uppercase fw-bold">Evening <span class="text-white">Cuisine</span></h3>
+                    <ul class="list-unstyled text-white-50 small mt-3">
+                        <li class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
+                            <span>Signature Seafood Grill</span>
+                            <span class="text-gold">₱1,200</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
+                            <span>Native Chicken Adobo Confit</span>
+                            <span class="text-gold">₱650</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span>Grilled Stuffed Squid</span>
+                            <span class="text-gold">₱580</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="menuCarouselSection" class="py-5 bg-black border-top border-secondary">
+        <div class="container-fluid px-0">
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="gallery-item overflow-hidden large-showcase">
+                                    <img src="aurora_bar.jpg" class="img-fluid animate-img w-100" alt="Showcase 1">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="gallery-item overflow-hidden large-showcase border-start border-secondary">
+                                    <img src="aurora_food.jpg" class="img-fluid animate-img w-100" alt="Showcase 2">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="gallery-item overflow-hidden large-showcase">
+                                    <img src="food1.jpg" class="img-fluid animate-img w-100" alt="Showcase 3">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="gallery-item overflow-hidden large-showcase border-start border-secondary">
+                                    <img src="food2.jpg" class="img-fluid animate-img w-100" alt="Showcase 4">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="gallery-item overflow-hidden large-showcase">
+                                    <img src="food3.jpg" class="img-fluid animate-img w-100" alt="Showcase 5">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <div class="gallery-item overflow-hidden large-showcase border-start border-secondary">
+                                    <img src="poolside_1.jpg" class="img-fluid animate-img w-100" alt="Showcase 6">
+                                    <div class="gallery-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-4 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row text-white-50 small">
+                <div class="col-md-6">© 2026 Aurora Cabanas | Paradise Regained</div>
+                <div class="col-md-6 text-md-end">Dev: John Andrei Dayahan | IT S121L | 2025-2026</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var nav = document.querySelector('.transition-nav');
+            if (window.pageYOffset > 50) { nav.classList.add('nav-scrolled'); }
+            else { nav.classList.remove('nav-scrolled'); }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
