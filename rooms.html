@@ -2,66 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooms & Suites | Aurora Cabanas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <header>
-        <h1>Aurora Cabanas</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="rooms.html" class="active">Rooms</a>
-            <a href="contact.html">Inquiry</a>
-        </nav>
-    </header>
+<body class="bg-black text-white pt-5">
 
-    <div class="container my-5">
-        <h2 class="section-title mb-5">Our Popular <span style="color:#d4af37">Accommodations</span></h2>
-        
-        <div class="mb-5">
-            <h3 class="mb-3">Resort Availability Schedule</h3>
-            <table class="table table-hover shadow-sm bg-white">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Activity</th>
-                        <th>Monday - Thursday</th>
-                        <th>Friday - Sunday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Room Check-in</td>
-                        <td>02:00 PM</td>
-                        <td>03:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Pool Access</td>
-                        <td>08:00 AM - 10:00 PM</td>
-                        <td>07:00 AM - 11:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transition-nav py-3">
+        <div class="container border-bottom border-secondary pb-2">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 5px;">Aurora Cabanas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active text-gold" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Inquiry</a></li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="btn btn-outline-gold rounded-0 px-4 fw-bold" href="contact.html">BOOK NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 pt-5">
+        <div class="text-center mb-5">
+            <h2 class="display-4 fw-black text-uppercase">Elite <span class="text-gold">Accommodations</span></h2>
+            <p class="text-white-50 mx-auto" style="max-width: 600px;">Our cabins are thoughtfully designed to provide the ultimate luxury experience with premium amenities.</p>
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm">
-                    <img src="room 3.jpg" class="card-img-top" alt="Standard Room">
-                    <div class="card-body">
-                        <h5>Standard Room</h5>
-                        <p class="text-gold">₱3,500</p>
-                        <a href="contact.html" class="btn btn-dark rounded-0 w-100">Inquire Now</a>
+        <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="room-card-v2 shadow-lg border border-secondary bg-dark-glass">
+                    <div class="room-img-container overflow-hidden">
+                        <img src="room 3.jpg" class="img-fluid animate-img w-100" alt="Standard Room">
+                        <div class="price-tag">₱3,500</div>
+                    </div>
+                    <div class="room-content-v2 p-4">
+                        <h3 class="text-uppercase fw-bold">Standard Room</h3>
+                        <div class="stars mb-3 text-gold">★★★★★</div>
+                        <div class="room-footer d-flex justify-content-between align-items-center border-top border-secondary pt-3">
+                            <span class="duration text-white-50 small">🕒 12 hours</span>
+                            <a href="contact.html" class="btn btn-outline-gold btn-sm rounded-0">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="room-card-v2 shadow-lg border border-secondary bg-dark-glass">
+                    <div class="room-img-container overflow-hidden">
+                        <img src="room 2.jpg" class="img-fluid animate-img w-100" alt="Friends and Family">
+                        <div class="price-tag">₱12,500</div>
+                    </div>
+                    <div class="room-content-v2 p-4">
+                        <h3 class="text-uppercase fw-bold">Friends & Family</h3>
+                        <div class="stars mb-3 text-gold">★★★★★</div>
+                        <div class="room-footer d-flex justify-content-between align-items-center border-top border-secondary pt-3">
+                            <span class="duration text-white-50 small">🕒 12 hours</span>
+                            <a href="contact.html" class="btn btn-outline-gold btn-sm rounded-0">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="room-card-v2 shadow-lg border border-secondary bg-dark-glass">
+                    <div class="room-img-container overflow-hidden">
+                        <img src="room 1.jpg" class="img-fluid animate-img w-100" alt="Master's Bedroom">
+                        <div class="price-tag">₱15,500</div>
+                    </div>
+                    <div class="room-content-v2 p-4">
+                        <h3 class="text-uppercase fw-bold">Master's Suite</h3>
+                        <div class="stars mb-3 text-gold">★★★★★</div>
+                        <div class="room-footer d-flex justify-content-between align-items-center border-top border-secondary pt-3">
+                            <span class="duration text-white-50 small">🕒 12 hours</span>
+                            <a href="contact.html" class="btn btn-outline-gold btn-sm rounded-0">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="p-5 border border-secondary bg-dark-glass shadow">
+                    <h3 class="text-uppercase fw-bold mb-4">Resort <span class="text-gold">Schedule</span></h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover border-secondary">
+                            <thead>
+                                <tr class="text-gold border-bottom border-gold">
+                                    <th>Activity / Facility</th>
+                                    <th>Mon - Thurs</th>
+                                    <th>Fri - Sun & Holidays</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-white-50">
+                                <tr>
+                                    <td class="text-white fw-bold">Room Check-in</td>
+                                    <td>02:00 PM</td>
+                                    <td>03:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-white fw-bold">Room Check-out</td>
+                                    <td>12:00 PM</td>
+                                    <td>11:00 AM</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-white fw-bold">Pool Access</td>
+                                    <td>08:00 AM - 10:00 PM</td>
+                                    <td>07:00 AM - 11:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-white fw-bold">Bistro Hours</td>
+                                    <td>07:00 AM - 03:00 PM</td>
+                                    <td>07:00 AM - 05:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="bg-dark text-white py-4 text-center">
-        <p>Developer: John Andrei Dayahan | IT S121L | 2025-2026 [cite: 30-31]</p>
+    <footer class="bg-black py-4 border-top border-secondary mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-white-50 small">
+                <div class="col-md-6">© 2026 Aurora Cabanas | Paradise Regained</div>
+                <div class="col-md-6 text-md-end">Dev: John Andrei Dayahan | IT S121L | 2025-2026</div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        window.onscroll = function() {
+            var nav = document.querySelector('.transition-nav');
+            if (window.pageYOffset > 50) { nav.classList.add('nav-scrolled'); }
+            else { nav.classList.remove('nav-scrolled'); }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
